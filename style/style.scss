@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    background-image: url(img/bg.jpg);
+    height: 100%;
+}
+
+.logo-img {
+    height: 5rem;
+    display: block;
+}
+
+.main-block {
+    padding: 50px;
+}
+
+.radio-select-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
