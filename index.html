@@ -39,37 +39,37 @@
                 <p class="choose-type__description">Select the type of investor you are below.</p>
                 <div class="radio-select-wrapper">
                     <div class="form_radio">
-                        <input type="radio" class="radio-input" id="individual" name="drone" value="individual"
+                        <input type="radio" class="radio-input" id="individual" name="invest-type" value="individual"
                             checked>
                         <label class="radio-label" for="individual">Individual</label>
-                        <div class="tooltip-icon">i</div>
+                        <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
                     </div>
                     
                     <div class="form_radio">
-                        <input type="radio" class="radio-input" id="business" name="drone" value="business">
+                        <input type="radio" class="radio-input" id="business" name="invest-type" value="business">
                         <label class="radio-label" for="business">Business</label>
-                        <div class="tooltip-icon">i</div>
+                        <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
                     </div>
                     
                     <div class="form_radio">
-                        <input type="radio" class="radio-input" id="ira" name="drone" value="ira">
+                        <input type="radio" class="radio-input" id="ira" name="invest-type" value="ira">
                         <label class="radio-label" for="ira">IRA</label>
-                        <div class="tooltip-icon">i</div>
+                        <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
                     </div>
 
                     <div class="form_radio">
-                        <input type="radio" class="radio-input" id="trust" name="drone" value="trust">
+                        <input type="radio" class="radio-input" id="trust" name="invest-type" value="trust">
                         <label class="radio-label" for="trust">Trust</label>
-                        <div class="tooltip-icon">i</div>
+                        <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
                     </div>
                 </div>
-                <div class="tooltip">
-                    <p class="tooltip__description">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</p>
-                </div>
+
                 <div class="agreement-wrapper">
-                    <input type="checkbox" id="agreement" name="agreement" class="agreement__checkbox">
-                    <label for="agreement"></label>
-                    <span class="agreement__description">I agree to the terms and recieving notifications from iintoo <a href="">View full terms</a></span>
+                    <label class="agreement__check">
+                        <input type="checkbox" id="agreement" class="agreement__check__input">
+                        <span class="check__box"></span>
+                    </label>
+                    <span class="agreement__description">I agree to the terms and recieving notifications from iintoo <a href="#">View full terms</a></span>
                 </div>
 
                 <button class="submit button">Create Account</button>
