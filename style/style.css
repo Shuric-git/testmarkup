@@ -39,7 +39,6 @@ body {
   display: flex;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  height: 100vh;
   max-width: 1440px;
 }
 
@@ -365,6 +364,60 @@ body {
   .agreement-wrapper {
     width: 300px;
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 15px;
+  }
+  .header {
+    background-image: url(img/bg700.jpg);
+    width: 100%;
+    height: 299px;
+    padding-left: 50px;
+    padding-top: 42px;
+  }
+  .main-block {
+    width: 100%;
+    padding-left: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .separator::before, .separator::after {
+    width: 48%;
+  }
+  .header {
+    padding: 15px;
+  }
+  .main-block {
+    padding-top: 0;
+  }
+  .register-label {
+    width: 100%;
+  }
+  .register-label:not(:last-child) {
+    margin-right: 0px;
+  }
+  .radio-select-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .agreement-wrapper {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
