@@ -33,11 +33,16 @@ body {
     color: #2a4a5c;
 }
 
+.main-wrapper {
+    background-color: #EFF6FF;
+    padding: 25px;
+}
+
 .container {
     display: flex;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    // height: 100vh;
+    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -174,14 +179,10 @@ body {
     margin-bottom: 121px;
 }
 
-@media (max-width: 1200px){
-    .radio-select-wrapper {
-        // flex-direction: column;
+.form_radio {
+    input[type=radio] {
+        display: none;
     }
-}
-
-.form_radio input[type=radio] {
-	display: none;
 }
 
 .form_radio {
@@ -191,19 +192,18 @@ body {
     margin-bottom: 21px;
 }
 
-.form_radio:nth-child(2n) {
-    // display: block;
+.form_radio {
+    label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 7px;
+        line-height: 18px;
+        user-select: none;
+    }
 }
 
-.form_radio label {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-	margin-right: 7px;
-	line-height: 18px;
-	user-select: none;
-}
 .form_radio label:before {
 	content: "";
 	display: inline-block;
@@ -305,8 +305,6 @@ body {
     border-radius: 5px;
 }
 
-
-
 @media (max-width: 1200px){
     %line {
         width: 41%;
@@ -321,6 +319,9 @@ body {
     }
     .separator {
         margin-left: 0;
+    }
+    .register-label:not(:last-child) {
+        margin-right: 0px;
     }
     .register-label {
         width: 90%;
@@ -348,6 +349,14 @@ body {
 }
 
 @media (max-width: 700px) {
+
+    %button {
+        width: 100%;
+        margin-left: 0;
+    }
+    %line {
+        width: 48%;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -359,24 +368,31 @@ body {
         background-image: url(img/bg700.jpg);
         width: 100%;
         height: 299px;
-        padding-left: 50px;
-        padding-top: 42px;
+        padding: 25px;
+    }
+    .section__title {
+        margin-bottom: 40px;
+        .title {
+            font-size: 2em;
+            margin: 15px 0;
+        }
+        .description {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
     }
     .main-block {
         width: 100%;
         padding-left: 0;
-    }
-    %button {
-        width: 100%;
-    }
-    %line {
-        width: 48%;
-    }
-    .header {
-        padding: 15px;
-    }
-    .main-block {
         padding-top: 0;
+    }
+    .choose-type__title {
+        font-size: 2em;
+        margin: 15px 0;
+    }
+    .choose-type__description {
+        font-size: 1.2em;
+        margin-top: 15px;
     }
     .register-label {
         width: 100%;

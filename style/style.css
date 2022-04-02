@@ -33,12 +33,18 @@ body {
   color: #2a4a5c;
 }
 
+.main-wrapper {
+  background-color: #EFF6FF;
+  padding: 25px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #ffffff;
   background-repeat: no-repeat;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -341,6 +347,9 @@ body {
   .separator {
     margin-left: 0;
   }
+  .register-label:not(:last-child) {
+    margin-right: 0px;
+  }
   .register-label {
     width: 90%;
     margin-bottom: 8px;
@@ -368,6 +377,13 @@ body {
 }
 
 @media (max-width: 700px) {
+  .button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .separator::before, .separator::after {
+    width: 48%;
+  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -383,24 +399,31 @@ body {
     background-image: url(img/bg700.jpg);
     width: 100%;
     height: 299px;
-    padding-left: 50px;
-    padding-top: 42px;
+    padding: 25px;
+  }
+  .section__title {
+    margin-bottom: 40px;
+  }
+  .section__title .title {
+    font-size: 2em;
+    margin: 15px 0;
+  }
+  .section__title .description {
+    font-size: 1.2em;
+    margin-top: 15px;
   }
   .main-block {
     width: 100%;
     padding-left: 0;
-  }
-  .button {
-    width: 100%;
-  }
-  .separator::before, .separator::after {
-    width: 48%;
-  }
-  .header {
-    padding: 15px;
-  }
-  .main-block {
     padding-top: 0;
+  }
+  .choose-type__title {
+    font-size: 2em;
+    margin: 15px 0;
+  }
+  .choose-type__description {
+    font-size: 1.2em;
+    margin-top: 15px;
   }
   .register-label {
     width: 100%;
