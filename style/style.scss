@@ -302,6 +302,8 @@ body {
 .agreement {
     margin-left: -2px;
     margin-bottom: 51px;
+    width: 95%;
+
     &__description {
         font-size: 13px;
         letter-spacing: 0.05px;
@@ -311,6 +313,7 @@ body {
     &__label {
         position: relative;
         left: 20px;
+        cursor: pointer;
     }
     
     &__input {

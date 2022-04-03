@@ -348,6 +348,7 @@ body {
 .agreement {
   margin-left: -2px;
   margin-bottom: 51px;
+  width: 95%;
 }
 
 .agreement__description {
@@ -360,6 +361,7 @@ body {
 .agreement__label {
   position: relative;
   left: 20px;
+  cursor: pointer;
 }
 
 .agreement__input {
