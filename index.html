@@ -13,64 +13,68 @@
             <header class="header">
                 <img src="style/img/logo.svg" alt="iintoo" class="logo-img">
             </header>
-            <main class="main-block">
-                <section class="section__title">
-                    <h1 class="title">Get iintoo it today</h1>
-                    <p class="description">There is no charge or obligation upon registration.</p>
-                </section>
-                <div class="social-media__register">
-                    <button class="button__register-facebook button">Register with Facebook</button>
-                    <button class="button__register-linkedin button">Register with Linkedin</button>
+            <main class="main">
+                <div class="slogan">
+                    <h1 class="slogan__title">Get iintoo it today</h1>
+                    <p class="slogan__description">There is no charge or obligation upon registration.</p>
+                </div>
+                <div class="social-media-register">
+                    <button class="social-media-register__button__facebook button">Register with Facebook</button>
+                    <button class="social-media-register__button__linkedin button">Register with Linkedin</button>
                 </div>
                 
                 <div class="separator"><span class="separator__text">OR</span></div>
 
-                <section class="create-account__register">
-                    <form action="submit" class="registration__form">
-                        <label for="email" class="register-label register-email">Email
-                            <input id="email" type="email" class="form__input-email register__input" placeholder="Email" value="gus.goodwin@gmail.com" name="email">
+                <section class="create-account">
+                    <form action="submit" class="create-account__form form">
+                        <label for="email" class="form__label register-email">
+                            <span class="form__fake-placeholder">Email</span>
+                            <input id="email" type="email" class="form__input" value="gus.goodwin@gmail.com" name="email">
                         </label>
                         
-                        <label for="phone" class="register-label register-phone">Phone
-                            <input id="phone" type="tel" class="form__input-phone register__input" name="phone">
+                        <label for="phone" class="form__label register-phone">
+                            <span class="form__fake-placeholder">Phone</span>
+                            <input id="phone" type="tel" class="form__input" name="phone">
                         </label>
-                        
                     </form>
-                    <h2 class="choose-type__title">What type of investor are you?</h2>
-                    <p class="choose-type__description">Select the type of investor you are below.</p>
-                    <div class="radio-select-wrapper">
-                        <div class="form_radio">
-                            <input type="radio" class="radio-input" id="individual" name="invest-type" value="individual"
-                                checked>
-                            <label class="radio-label" for="individual">Individual</label>
-                            <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
-                        </div>
-                        
-                        <div class="form_radio">
-                            <input type="radio" class="radio-input" id="business" name="invest-type" value="business">
-                            <label class="radio-label" for="business">Business</label>
-                            <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
-                        </div>
-                        
-                        <div class="form_radio">
-                            <input type="radio" class="radio-input" id="ira" name="invest-type" value="ira">
-                            <label class="radio-label" for="ira">IRA</label>
-                            <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
-                        </div>
 
-                        <div class="form_radio">
-                            <input type="radio" class="radio-input" id="trust" name="invest-type" value="trust">
-                            <label class="radio-label" for="trust">Trust</label>
-                            <div class="tooltip-icon" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
+                    <div class="choose-type">
+                        <h2 class="choose-type__title">What type of investor are you?</h2>
+                        <p class="choose-type__description">Select the type of investor you are below.</p>
+                        <div class="choose-type__radio-wrapper">
+                            <div class="choose-type__radio-item radio-item">
+                                <input type="radio" class="radio-item__input" id="individual" name="invest-type" value="individual"
+                                    checked>
+                                <label class="radio-item__label" for="individual">Individual</label>
+                                <div class="radio-item__tooltip" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
+                            </div>
+                            
+                            <div class="choose-type__radio-item radio-item">
+                                <input type="radio" class="radio-item__input" id="business" name="invest-type" value="business">
+                                <label class="radio-item__label" for="business">Business</label>
+                                <div class="radio-item__tooltip" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
+                            </div>
+                            
+                            <div class="choose-type__radio-item radio-item">
+                                <input type="radio" class="radio-item__input" id="ira" name="invest-type" value="ira">
+                                <label class="radio-item__label" for="ira">IRA</label>
+                                <div class="radio-item__tooltip" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
+                            </div>
+
+                            <div class="choose-type__radio-item radio-item">
+                                <input type="radio" class="radio-item__input" id="trust" name="invest-type" value="trust">
+                                <label class="radio-item__label" for="trust">Trust</label>
+                                <div class="radio-item__tooltip" data-tooltip="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="agreement-wrapper">
-                        <label class="agreement__check">
-                            <input type="checkbox" id="agreement" class="agreement__check__input">
-                            <span class="check__box"></span>
-                        </label>
-                        <span class="agreement__description">I agree to the terms and recieving notifications from iintoo <a href="#">View full terms</a></span>
+                    <div class="agreement">
+                        <input type="checkbox" class="agreement__input" id="check">
+                        <label class="agreement__label" for="check">I agree to the terms and recieving notifications from iintoo<a href="#">View full terms</a></label>
+                        <!-- <span class="agreement__fake-checkbox"></span> -->
+                        
+                        <span class="agreement__description"></span>
                     </div>
 
                     <button class="submit button">Create Account</button>
